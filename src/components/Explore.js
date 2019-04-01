@@ -27,11 +27,17 @@ class Explore extends Component {
       <div>
         <div className="justify-center head-wrapper">
           <input
-            size="60"
-            ref={input => this.input = input}
+            ref={(input) => { this.input = input; }}
             defaultValue={value}
+            type="text"
+            placeholder="Search.."
+            className="searchInput"
           />
-          <button onClick={this.handleSearchClick}>
+          <button
+            type="button"
+            onClick={this.handleSearchClick}
+            className="searchButton"
+          >
             find
           </button>
         </div>

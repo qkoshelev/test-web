@@ -196,3 +196,30 @@ td.no-padding {
     font-size: 7px;
   }
 }
+
+/* Style the search field */
+.searchInput {
+  padding: 7px;
+  font-size: 12px;
+  border: 1px solid grey;
+  float: left;
+  width: 40%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.searchButton {
+  float: left;
+  width: 50px;
+  padding: 7px;
+  background: #2196F3;
+  color: white;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: #0b7dda;
+}
