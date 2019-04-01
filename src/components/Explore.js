@@ -18,6 +18,12 @@ class Explore extends Component {
     onChange(this.input.value);
   }
 
+  handleKeyUp = (e) => {
+    if (e.keyCode === 13) {
+      this.handleSearchClick();
+    }
+  }
+
   render() {
     const {
       value,
@@ -32,13 +38,14 @@ class Explore extends Component {
             type="text"
             placeholder="Search.."
             className="searchInput"
+            onKeyUp={this.handleKeyUp}
           />
           <button
             type="button"
             onClick={this.handleSearchClick}
             className="searchButton"
           >
-            find
+            <i className="fa fa-search" />
           </button>
         </div>
         <SearchResult
