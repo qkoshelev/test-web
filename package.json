@@ -31,7 +31,7 @@
     "redux-thunk": "^2.1.0",
     "redux-actions": "0.11.x",
     "axios": "0.10.x",
-    "jquery": "2.2.x",
+    "jquery": ">=3.0.0",
     "qs": "6.4.x",
     "sematable": "1.9.1",
     "bootstrap": "4.0.0-alpha.5",
