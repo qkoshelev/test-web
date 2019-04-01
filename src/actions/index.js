@@ -15,6 +15,6 @@ export const fetchPosts = query => (dispatch) => {
     dispatch(fetchPostsSuccess(data));
   }).catch((err) => {
     dispatch(fetchPostsFailed(err));
-    dispatch(alert('Unable to fetch posts from server')); //TODO notifyError action with popup
+    alert('Unable to fetch posts from server'); //TODO notifyError action with popup
   });
 };

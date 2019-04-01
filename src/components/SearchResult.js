@@ -24,7 +24,7 @@ class SearchResult extends Component {
   static propTypes = {
     value: PropTypes.string.isRequired,
     getPosts: PropTypes.func.isRequired,
-    posts: PropTypes.array,
+    posts: PropTypes.object,
     requesting: PropTypes.bool,
     serverError: PropTypes.object,
   }

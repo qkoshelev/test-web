@@ -6,14 +6,16 @@ class Explore extends Component {
   static propTypes = {
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
-    getPosts: PropTypes.func.isRequired,
     posts: PropTypes.array,
     requesting: PropTypes.bool,
     serverError: PropTypes.object,
   }
 
   handleSearchClick = () => {
-    this.props.onChange(this.input.value);
+    const {
+      onChange,
+    } = this.props
+    onChange(this.input.value);
   }
 
   render() {
@@ -26,7 +28,7 @@ class Explore extends Component {
         <div className="justify-center head-wrapper">
           <input
             size="60"
-            ref={(input) => this.input = input}
+            ref={input => this.input = input}
             defaultValue={value}
           />
           <button onClick={this.handleSearchClick}>
